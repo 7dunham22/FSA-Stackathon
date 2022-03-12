@@ -1,3 +1,5 @@
+import { AllProducts, NewProduct, ProductTreemap } from '../components';
+
 const AdminView = () => {
   return (
     <div id="admin-view">
