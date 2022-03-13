@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { setProducts } from '../redux/products';
 import { updateProduct } from '../redux/singleProduct';
 import PropTypes from 'prop-types';
+import styles from './AllProducts.module.css';
+import Table from 'react-bootstrap/Table';
 // import Item from '../server/database/item';
 
 export async function getServerSideProps({ params }) {
@@ -46,43 +48,46 @@ class AllProducts extends React.Component {
     return this.loading ? (
       <h1>LOADING</h1>
     ) : (
-      <div id="products-table">
+      <div className={styles.container}>
         <h3>Products</h3>
-        <table id="products-table">
-          <tbody>
-            <tr>
-              <th>Id</th>
-              <th>Product</th>
-              <th>Category</th>
-              <th>Quantity</th>
-              <th></th>
-            </tr>
-            {products.map((product) => {
-              return (
-                <tr key={product.id}>
-                  <td>{product.id}</td>
-                  <td>{product.name}</td>
-                  <td>{product.category}</td>
-                  <td>
-                    <input
-                      className="change-quantity"
-                      type="number"
-                      value={product.quantity}
-                      onChange={(event) =>
-                        this.changeQuantity({
-                          id: product.id,
-                          name: product.name,
-                          category: product.category,
-                          quantity: event.target.value,
-                        })
-                      }
-                    />
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div className={styles.table}>
+          <Table striped border="true" hover>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              {products.map((product) => {
+                return (
+                  <tr key={product.id}>
+                    <td>{product.id}</td>
+                    <td>{product.name}</td>
+                    <td>{product.category}</td>
+                    <td>
+                      <input
+                        className="change-quantity"
+                        type="number"
+                        value={product.quantity}
+                        onChange={(event) =>
+                          this.changeQuantity({
+                            id: product.id,
+                            name: product.name,
+                            category: product.category,
+                            quantity: event.target.value,
+                          })
+                        }
+                      />
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </Table>
+        </div>
       </div>
     );
   }

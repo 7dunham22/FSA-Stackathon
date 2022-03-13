@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addProduct } from '../redux/singleProduct';
 import PropTypes from 'prop-types';
+import styles from './NewProduct.module.css';
 
 class NewProduct extends React.Component {
   constructor(props) {
@@ -52,7 +53,7 @@ class NewProduct extends React.Component {
 
   render() {
     return (
-      <form id="new-product-form" onSubmit={this.handleSubmit}>
+      <form className={styles.container} onSubmit={this.handleSubmit}>
         <h3>Create a New Product</h3>
         <div className="new-product-input">
           <label htmlFor="name">Name: </label>
@@ -102,7 +103,7 @@ class NewProduct extends React.Component {
             onChange={this.handleChange}
           />
         </div>
-        <input type="submit" value="Create" />
+        <input className={styles.submitButton} type="submit" value="Create" />
         <p>
           Note: Attempting to add an existing item will only alter the quantity
           thereof in the database.
