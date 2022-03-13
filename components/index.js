@@ -2,7 +2,7 @@ import AllProducts from './AllProducts';
 import NewProduct from './NewProduct';
 import ProductTreemap from './ProductTreemap';
 
-export default { AllProducts, NewProduct, ProductTreemap };
+export { AllProducts, NewProduct, ProductTreemap };
 
 // class AdminView extends React.Component {
 //   render() {

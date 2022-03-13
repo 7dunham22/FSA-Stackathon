@@ -9,7 +9,7 @@ const AdminView = () => {
         <AllProducts />
         <NewProduct />
       </div>
-      <ProductTreemap />
+      {/* <ProductTreemap /> */}
     </div>
   );
 };
