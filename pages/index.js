@@ -1,4 +1,5 @@
 import { AllProducts, NewProduct, ProductTreemap } from '../components';
+import React from 'react';
 
 const AdminView = () => {
   return (
