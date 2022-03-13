@@ -55,7 +55,7 @@ class NewProduct extends React.Component {
     return (
       <form className={styles.container} onSubmit={this.handleSubmit}>
         <h3>Create a New Product</h3>
-        <div className="new-product-input">
+        <div className={styles.input}>
           <label htmlFor="name">Name: </label>
           <input
             type="text"
@@ -65,7 +65,7 @@ class NewProduct extends React.Component {
             required
           />
         </div>
-        <div className="new-product-input">
+        <div className={styles.input}>
           <label htmlFor="category">Category: </label>
           <select
             id="category"
@@ -81,7 +81,7 @@ class NewProduct extends React.Component {
             ))}
           </select>
         </div>
-        <div className="new-product-input">
+        <div className={styles.input}>
           <label htmlFor="quantity">Quantity: </label>
           <input
             type="number"
@@ -93,7 +93,7 @@ class NewProduct extends React.Component {
             onChange={this.handleChange}
           />
         </div>
-        <div className="new-product-input">
+        <div className={styles.input}>
           <label htmlFor="imageUrl">Image URL: </label>
           <input
             type="url"

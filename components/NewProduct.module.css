@@ -10,6 +10,14 @@
   margin-left: 10px;
 }
 
+/* .input {
+  background: linear-gradient(white, white);
+}
+
+.input > * {
+  background: linear-gradient(white, white);
+} */
+
 .submitButton {
   width: 100px;
 }

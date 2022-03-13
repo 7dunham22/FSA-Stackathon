@@ -2448,7 +2448,7 @@ var NewProduct = /*#__PURE__*/function (_React$Component) {
         className: _NewProduct_module_css__WEBPACK_IMPORTED_MODULE_10__["default"].container,
         onSubmit: this.handleSubmit
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("h3", null, "Create a New Product"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
-        className: "new-product-input"
+        className: _NewProduct_module_css__WEBPACK_IMPORTED_MODULE_10__["default"].input
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("label", {
         htmlFor: "name"
       }, "Name: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("input", {
@@ -2458,7 +2458,7 @@ var NewProduct = /*#__PURE__*/function (_React$Component) {
         onChange: this.handleChange,
         required: true
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
-        className: "new-product-input"
+        className: _NewProduct_module_css__WEBPACK_IMPORTED_MODULE_10__["default"].input
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("label", {
         htmlFor: "category"
       }, "Category: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("select", {
@@ -2474,7 +2474,7 @@ var NewProduct = /*#__PURE__*/function (_React$Component) {
           value: category
         }, category);
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
-        className: "new-product-input"
+        className: _NewProduct_module_css__WEBPACK_IMPORTED_MODULE_10__["default"].input
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("label", {
         htmlFor: "quantity"
       }, "Quantity: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("input", {
@@ -2486,7 +2486,7 @@ var NewProduct = /*#__PURE__*/function (_React$Component) {
         step: "1",
         onChange: this.handleChange
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("div", {
-        className: "new-product-input"
+        className: _NewProduct_module_css__WEBPACK_IMPORTED_MODULE_10__["default"].input
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("label", {
         htmlFor: "imageUrl"
       }, "Image URL: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7__.createElement("input", {
@@ -3379,7 +3379,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".fCK55izrXQ1K7AM1Y3Zg {\n  border-color: black;\n}\n\n.TtGYADiy9bjw7emSnrnZ {\n  width: 500px;\n  box-shadow: 2px 2px 2px 1px black;\n}\n", "",{"version":3,"sources":["webpack://./components/AllProducts.module.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,iCAAiC;AACnC","sourcesContent":[".container {\n  border-color: black;\n}\n\n.table {\n  width: 500px;\n  box-shadow: 2px 2px 2px 1px black;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".fCK55izrXQ1K7AM1Y3Zg {\n  border-color: black;\n  background-color: white;\n}\n\n.TtGYADiy9bjw7emSnrnZ {\n  width: 500px;\n  box-shadow: 2px 2px 2px 1px black;\n}\n", "",{"version":3,"sources":["webpack://./components/AllProducts.module.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,uBAAuB;AACzB;;AAEA;EACE,YAAY;EACZ,iCAAiC;AACnC","sourcesContent":[".container {\n  border-color: black;\n  background-color: white;\n}\n\n.table {\n  width: 500px;\n  box-shadow: 2px 2px 2px 1px black;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": "fCK55izrXQ1K7AM1Y3Zg",
@@ -3410,7 +3410,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".hcFjlJCtRMUjRTFMCklX {\n  box-shadow: 2px 2px 2px 1px black;\n  display: flex;\n  width: 400px;\n  flex-direction: column;\n}\n\n.hcFjlJCtRMUjRTFMCklX > * {\n  padding: 10px;\n  margin-left: 10px;\n}\n\n.vTlgafdFqWvfcJc4MVhP {\n  width: 100px;\n}\n", "",{"version":3,"sources":["webpack://./components/NewProduct.module.css"],"names":[],"mappings":"AAAA;EACE,iCAAiC;EACjC,aAAa;EACb,YAAY;EACZ,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,iBAAiB;AACnB;;AAEA;EACE,YAAY;AACd","sourcesContent":[".container {\n  box-shadow: 2px 2px 2px 1px black;\n  display: flex;\n  width: 400px;\n  flex-direction: column;\n}\n\n.container > * {\n  padding: 10px;\n  margin-left: 10px;\n}\n\n.submitButton {\n  width: 100px;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".hcFjlJCtRMUjRTFMCklX {\n  box-shadow: 2px 2px 2px 1px black;\n  display: flex;\n  width: 400px;\n  flex-direction: column;\n}\n\n.hcFjlJCtRMUjRTFMCklX > * {\n  padding: 10px;\n  margin-left: 10px;\n}\n\n/* .input {\n  background: linear-gradient(white, white);\n}\n\n.input > * {\n  background: linear-gradient(white, white);\n} */\n\n.vTlgafdFqWvfcJc4MVhP {\n  width: 100px;\n}\n", "",{"version":3,"sources":["webpack://./components/NewProduct.module.css"],"names":[],"mappings":"AAAA;EACE,iCAAiC;EACjC,aAAa;EACb,YAAY;EACZ,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,iBAAiB;AACnB;;AAEA;;;;;;GAMG;;AAEH;EACE,YAAY;AACd","sourcesContent":[".container {\n  box-shadow: 2px 2px 2px 1px black;\n  display: flex;\n  width: 400px;\n  flex-direction: column;\n}\n\n.container > * {\n  padding: 10px;\n  margin-left: 10px;\n}\n\n/* .input {\n  background: linear-gradient(white, white);\n}\n\n.input > * {\n  background: linear-gradient(white, white);\n} */\n\n.submitButton {\n  width: 100px;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": "hcFjlJCtRMUjRTFMCklX",
