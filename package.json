@@ -4,22 +4,25 @@
   "description": "Fullstack Academy Stackathon Project",
   "main": "index.js",
   "scripts": {
-    "build": "next build",
+    "build": "webpack",
     "start": "next start",
     "seed": "node seed.js",
-    "dev": "next"
+    "dev": "webpack -w & next"
   },
   "author": "David Dunham",
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
+    "assert": "^2.0.0",
     "axios": "^0.26.1",
+    "crypto-browserify": "^3.12.0",
     "d3": "^7.3.0",
     "express": "^4.17.3",
     "http-server": "^14.1.0",
     "morgan": "^1.10.0",
     "next": "^12.1.0",
+    "path-browserify": "^1.0.1",
     "pg": "^8.7.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -30,7 +33,9 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
-    "sequelize": "^6.17.0"
+    "sequelize": "^6.17.0",
+    "url": "^0.11.0",
+    "util": "^0.12.4"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

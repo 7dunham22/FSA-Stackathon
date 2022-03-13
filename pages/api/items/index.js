@@ -3,7 +3,6 @@
 const Item = require('../../../server/database/item.js');
 
 export default async function handler(req, res) {
-  console.log('req.method: ', req.method);
   try {
     if (req.method === 'GET') {
       const items = await Item.findAll();

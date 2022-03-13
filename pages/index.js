@@ -3,9 +3,9 @@ import React from 'react';
 
 const AdminView = () => {
   return (
-    <div id="admin-view">
+    <div id="adminView">
       <h1>Marketplace Analytics</h1>
-      <div id="admin-products-display">
+      <div id="adminProductsDisplay">
         <AllProducts />
         <NewProduct />
       </div>

@@ -1,11 +1,19 @@
 module.exports = {
-  entry: ['./client/index.js'],
+  entry: ['./pages/index.js'],
   output: {
     path: __dirname,
     filename: './public/bundle.js',
   },
   devtool: 'source-map',
   mode: 'development',
+  resolve: {
+    fallback: {
+      path: require.resolve('path-browserify'),
+      url: require.resolve('url/'),
+      assert: require.resolve('assert/'),
+      crypto: require.resolve('crypto-browserify'),
+    },
+  },
   module: {
     rules: [
       {

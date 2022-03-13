@@ -12,16 +12,16 @@
   align-self: center;
 }
 
-#admin-view {
+#adminView {
   display: flex;
   flex-direction: column;
 }
 
-#admin-view > h1 {
+#adminView > h1 {
   align-self: center;
 }
 
-#admin-products-display {
+#adminProductsDisplay {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

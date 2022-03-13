@@ -3,6 +3,11 @@ import { connect } from 'react-redux';
 import { setProducts } from '../redux/products';
 import { updateProduct } from '../redux/singleProduct';
 import PropTypes from 'prop-types';
+// import Item from '../server/database/item';
+
+export async function getServerSideProps({ params }) {
+  console.log(params);
+}
 
 class AllProducts extends React.Component {
   constructor(props) {
