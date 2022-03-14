@@ -1,4 +1,9 @@
-import { AllProducts, NewProduct, ProductTreemap } from '../components';
+import {
+  AllProducts,
+  NewProduct,
+  ProductTreemap,
+  DataViz,
+} from '../components';
 import React from 'react';
 // import axios from 'axios';
 // import Item from '../server/database/item';
@@ -18,6 +23,7 @@ const AdminView = () => {
         <AllProducts />
         <NewProduct />
       </div>
+      <DataViz />
       {/* <ProductTreemap /> */}
     </div>
   );

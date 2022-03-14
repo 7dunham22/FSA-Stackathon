@@ -1,8 +1,9 @@
 import AllProducts from './AllProducts';
 import NewProduct from './NewProduct';
 import ProductTreemap from './ProductTreemap';
+import DataViz from './DataViz';
 
-export { AllProducts, NewProduct, ProductTreemap };
+export { AllProducts, NewProduct, ProductTreemap, DataViz };
 
 // class AdminView extends React.Component {
 //   render() {
