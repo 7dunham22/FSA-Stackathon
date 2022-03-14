@@ -5,11 +5,6 @@ import { updateProduct } from '../redux/singleProduct';
 import PropTypes from 'prop-types';
 import styles from './AllProducts.module.css';
 import Table from 'react-bootstrap/Table';
-// import Item from '../server/database/item';
-
-export async function getServerSideProps({ params }) {
-  console.log(params);
-}
 
 class AllProducts extends React.Component {
   constructor(props) {
